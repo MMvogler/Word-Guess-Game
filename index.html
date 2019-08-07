@@ -20,7 +20,6 @@
         </div>
     </div>
 
-    
     <div>
         <p id = "directions"> Press any key to get started! </p>
     </div>
@@ -32,76 +31,10 @@
     <div class = "guessesRemain"> Number of Guesses Remaining: </div>
     <br>
     <div class = "guessedLetters"> Letters Already Guessed: </div>
-
-
-    <script type = "text/javascript">
-
-        // An array of words to generate 
-
-        var words = ["gum", "chocolate", "taffy"];
-
-        // Pick a word randomly
-
-        var wordNumber = Math.floor(Math.random() * words.length);
-
-        var wordPicked = words[wordNumber];
-            
-        
-        // Generate underscores based on the length of words
-
-        var underscore = []
-
-        var generateUnderscore = () => {
-            for (var i = 0; i < wordPicked.length; i++) {
-            underscore.push("_");
-
-        }
-            return underscore;
-        }
-
-        // When user types this creates an event and text is 
-        // converted to lowercase. Then capture the user's choice.
-
-            // document.onkeyup = function() {
-            //     var userguess = String.fromCharCode(event.keyCode). 
-            //     toLowerCase();
-
-            //     console.log(userguess);
-
-            // }
-
-        document.addEventListener('keypress', (event) => {
-                var userguess = String.fromCharCode(event.keyCode).
-                toLowerCase();
-
-
-        });
-
-  
-
-    
-
-
-
-
     
     
-    
-    
-    var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
-                "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-    
-       
-        
-    
-    </script>
+<script src="assets/javascript/game.js"></script>    
 
 
-
-
-
-
-    
 </body>
 </html>
